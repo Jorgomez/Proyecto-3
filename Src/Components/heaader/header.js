@@ -1,4 +1,3 @@
-import { searchInput } from '../../../main'
 import { filterWord } from '../FilterWord/filter'
 import { gallery } from '../Gallery/gallery'
 import './header.css'
@@ -31,10 +30,6 @@ export const header = (boxGallery, boxInput) => {
   reinicio.id = 'button-Start'
   nav1.append(reinicio)
 
-  reinicio.addEventListener('click', () =>
-    gallery(boxGallery, { palabra: 'surf' })
-  )
-
   const divForm = document.createElement('div')
   divForm.className = 'divForm'
 
@@ -47,6 +42,12 @@ export const header = (boxGallery, boxInput) => {
       filterWord(boxGallery, e.target)
     }
   })
+
+  reinicio.addEventListener(
+    'click',
+
+    () => (gallery(boxGallery, { palabra: 'surf' }), (boxInput.value = ''))
+  )
 
   const buttonSearch = document.createElement('button')
   buttonSearch.className = 'buttonSearch'
