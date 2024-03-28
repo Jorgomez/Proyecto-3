@@ -1,0 +1,16 @@
+#show-More {
+  color: azure;
+  position: absolute;
+  background-color: black;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2%;
+  border-radius: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#show-More:hover {
+  background-color: rgb(118, 5, 5);
+}

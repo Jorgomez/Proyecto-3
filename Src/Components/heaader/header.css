@@ -1,0 +1,137 @@
+header * {
+  color: black;
+  font-weight: 500;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: var(--spacing-s);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  z-index: 999;
+  margin-bottom: 10px;
+  height: 10svh;
+  gap: 10px;
+}
+#firstNav {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5px;
+  width: 25%;
+  /* background-color: azure; */
+  box-sizing: border-box;
+}
+#secondNav {
+  width: 15%;
+}
+header > nav > ul {
+  display: flex;
+  width: 100%;
+}
+
+#firstNav {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5px;
+  width: 25%;
+  /* background-color: azure; */
+  box-sizing: border-box;
+}
+.main-nav > li:first-child {
+  margin-top: 4px;
+}
+header * img {
+  width: 30px;
+}
+.divForm {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+
+  /* background-color: rgba(128, 128, 128, 0.241); */
+  border-radius: 25px;
+}
+#search-input {
+  width: 100%;
+  border: none;
+  padding: var(--spacing-s);
+  border-radius: 25px;
+  background-color: rgba(128, 128, 128, 0.105);
+}
+.buttonSearch {
+  display: none;
+}
+
+#button-Start {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+@media (max-width: 800px) {
+  .divForm {
+    display: flex;
+    width: 60%;
+
+    /* background-color: rgba(128, 128, 128, 0.27); */
+  }
+  #search-input {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0.01px;
+    border-bottom-right-radius: 0.01px;
+  }
+  .buttonSearch {
+    display: flex;
+    padding: var(--spacing-s);
+    border: 0.1px solid;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.333);
+    cursor: pointer;
+    text-align: justify;
+    color: rgba(54, 27, 27, 0.795);
+    transition: 1s;
+  }
+
+  .buttonSearch:hover {
+    transform: scale(1.1);
+  }
+
+  #secondNav ul li:nth-child(1) {
+    display: none;
+  }
+  #firstNav ul li:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  #firstNav {
+    width: 20%;
+    margin-right: 10px;
+  }
+  #secondNav {
+    width: 7%;
+  }
+  #firstNav ul li:nth-child(2) {
+    font-size: small;
+  }
+  #firstNav ul li:nth-child(3) {
+    display: none;
+  }
+  #secondNav ul li:nth-child(1),
+  #secondNav ul li:nth-child(2) {
+    display: none;
+  }
+  header * img {
+    width: 20px;
+  }
+}

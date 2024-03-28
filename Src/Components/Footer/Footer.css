@@ -1,0 +1,15 @@
+/* FOOTER STYLES */
+footer {
+  height: 5svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(157, 147, 147, 0.464);
+}
+footer > h4 {
+  font-weight: 200;
+  font-size: medium;
+}
