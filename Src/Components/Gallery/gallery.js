@@ -20,7 +20,7 @@ export const gallery = (
   )
     .then((res) => res.json())
     .then((pictures) => {
-      const arrayPictures = pictures.results
+      let arrayPictures = pictures.results
 
       // const PrintBoxError =()=>
       if (pictures.total > 0) {
@@ -45,6 +45,4 @@ export const gallery = (
 
   document.body.appendChild(boxGallery)
   printFooter()
-
-  console.log('vamos a ver')
 }
