@@ -15,5 +15,8 @@ export const showMeMore = (boxGallery, boxButton) => {
         palabra: searchInput.value || 'surf',
         pages: paginas
       })
+
+    console.log(paginas)
   })
 }
+// pruab de que resulta??

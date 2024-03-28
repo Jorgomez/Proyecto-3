@@ -45,4 +45,6 @@ export const gallery = (
 
   document.body.appendChild(boxGallery)
   printFooter()
+
+  console.log('vamos a ver')
 }
